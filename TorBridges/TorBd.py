@@ -137,13 +137,6 @@ def send_post_data_to_web_page():
         switchIP()
 
 
-        
-
-
-    
-
-
-    
     
 
 def main():
