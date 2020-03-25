@@ -7,7 +7,9 @@ You can get new bridges with Tor Bridges. bypassing tor captcha and get bridges
 -  `tor --hash-password my_password`
 -  `sudo gedit /etc/tor/torrc`
 -  ```
+    # add to config file
     ControlPort 9051
     HashedControlPassword YOUR_HASH_PASSWORD
     CookieAuthentication 1
     ```
+ - `you must add my_password to config_add.py` 
