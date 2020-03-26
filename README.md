@@ -12,7 +12,7 @@ You can get new bridges with Tor Bridges. bypassing tor captcha and get bridges
     HashedControlPassword YOUR_HASH_PASSWORD
     CookieAuthentication 1
     ```
- - `you must add my_password to config_add.py` 
+ - `you must add my_password to file  config_add.py` 
 - ```
     # Debian
     sudo service tor restart 
