@@ -21,7 +21,7 @@ import threading
 def switchIP():
     """switch new ip tor bypass block ip"""
     with Controller.from_port(port = 9051) as controller:
-        controller.authenticate(password = "sina7878")
+        controller.authenticate(password = "")
         controller.signal(Signal.NEWNYM)
 
 
