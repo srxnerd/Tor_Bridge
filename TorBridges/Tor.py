@@ -128,7 +128,7 @@ def send_post_data_to_web_page():
 
     else:
         get_str = get_text(str(find_post)).replace('[', '').replace(']', '')
-        print(colored("[+] found bridegs!\n", "green"), colored(get_str, "green"))
+        print(colored("[+] found bridegs! Saved on the Savedـbridges  \n", "green"), colored(get_str, "green"))
         save_bridges(get_str) # save bridges on the file txt 
         # tor_requests.cookies.clear_expired_cookies()
         tor_requests.cookies.clear_session_cookies()
