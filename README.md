@@ -13,3 +13,7 @@ You can get new bridges with Tor Bridges. bypassing tor captcha and get bridges
     CookieAuthentication 1
     ```
  - `you must add my_password to config_add.py` 
+- ```
+    sudo service tor restart or
+    sudo systemctl restart tor.service
+    ```
