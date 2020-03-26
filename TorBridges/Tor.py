@@ -32,7 +32,7 @@ input_while = int(argv[1])
 
 # for save bridegs in file txt
 def save_bridges(bridges):
-    with open("tor_BD.txt", "a") as file:
+    with open("Tor_Bridge/Savedـbridges/tor_BD.txt", "a") as file:
         file.write(bridges)
         file.close()
     
@@ -78,7 +78,7 @@ def get_img_captcah():
     soup_data4 = str(soup_data3).replace('/>', "")
     soup_data5 = str(soup_data4).replace('"', "")
     soup_data6 = str(soup_data5).replace(',', "")
-    f = open("img_cpatcha_one.jpeg", "wb")
+    f = open("Tor_Bridge/image/img_cpatcha_one.jpeg", "wb")
     f.write(base64.b64decode(soup_data6))
     f.close()
 
@@ -87,7 +87,7 @@ def get_img_captcah():
 # processing imgae captcha and extract text on image
 def processing_img_captcha():
         global text_img
-        image_open = cv2.imread("img_cpatcha_one.jpeg", cv2.IMREAD_COLOR)
+        image_open = cv2.imread("Tor_Bridge/image/img_cpatcha_one.jpeg", cv2.IMREAD_COLOR)
         img_orginal = cv2.GaussianBlur(image_open, (9,9),20)
         text_img = pytesseract.image_to_string(img_orginal, lang='eng')
 
