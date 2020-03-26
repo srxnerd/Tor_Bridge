@@ -14,6 +14,8 @@ You can get new bridges with Tor Bridges. bypassing tor captcha and get bridges
     ```
  - `you must add my_password to config_add.py` 
 - ```
-    sudo service tor restart or
+    # Debian
+    sudo service tor restart 
+    # arch
     sudo systemctl restart tor.service
     ```
