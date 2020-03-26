@@ -1,3 +1,3 @@
 """file config for add password"""
 
-PASSWORD_YOU = ""
+PASSWORD_YOU = "sina7878"

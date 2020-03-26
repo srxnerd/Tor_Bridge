@@ -32,7 +32,7 @@ input_while = int(argv[1])
 
 # for save bridegs in file txt
 def save_bridges(bridges):
-    with open("../Savedـbridges/tor_BD.txt", "a") as file:
+    with open("../Savedـbridges/tor_BJD.txt", "a") as file:
         file.write(bridges)
         file.close()
     
@@ -123,14 +123,13 @@ def send_post_data_to_web_page():
     find_post = soup_post("div", id="bridgelines")
     if str(find_post) == "[]":
         print(colored("[-] not found bridegs try agine!", "red"))
-        tor_requests.cookies.clear()
         tor_requests.close()
+        switchIP()
 
     else:
         get_str = get_text(str(find_post)).replace('[', '').replace(']', '')
         print(colored("[+] found bridegs! Saved on the Savedـbridges  \n", "green"), colored(get_str, "green"))
         save_bridges(get_str) # save bridges on the file txt 
-        # tor_requests.cookies.clear_expired_cookies()
         tor_requests.cookies.clear_session_cookies()
         tor_requests.cookies.clear()
         tor_requests.close()
