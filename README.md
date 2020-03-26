@@ -3,7 +3,7 @@
 ## about
 You can get new bridges with Tor Bridges. bypassing tor captcha and get bridges
 
-## run
+## config file torrc and config_add.py
 -  `tor --hash-password my_password`
 -  `sudo gedit /etc/tor/torrc`
 -  ```
