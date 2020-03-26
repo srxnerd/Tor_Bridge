@@ -130,7 +130,6 @@ def send_post_data_to_web_page():
         get_str = get_text(str(find_post)).replace('[', '').replace(']', '')
         print(colored("[+] found bridegs! Saved on the Savedـbridges  \n", "green"), colored(get_str, "green"))
         save_bridges(get_str) # save bridges on the file txt 
-        tor_requests.cookies.clear_session_cookies()
         tor_requests.cookies.clear()
         tor_requests.close()
         switchIP()
@@ -145,6 +144,7 @@ def main():
         if run == input_while:
             break;
         send_post_data_to_web_page()
+        switchIP()
 
 if __name__ == "__main__":
     main()
