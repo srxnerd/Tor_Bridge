@@ -21,6 +21,7 @@ You can get new bridges with Tor Bridges. bypassing tor captcha and get bridges
  - `you must add my_password to file  config_add.py`
  ## for run app
  - ```
+      cd TorBridges
       python Tor.py number 
       #Example:
       python Tor.py 10
