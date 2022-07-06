@@ -5,7 +5,7 @@ chardet==3.0.4
 fake-useragent==0.1.11
 idna==2.9
 inscriptis==1.0
-lxml==4.5.0
+lxml==4.9.1
 numpy==1.18.2
 opencv-python==4.2.0.32
 Pillow==7.0.0
