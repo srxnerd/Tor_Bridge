@@ -8,7 +8,7 @@ inscriptis==1.0
 lxml==4.5.0
 numpy==1.18.2
 opencv-python==4.2.0.32
-Pillow==7.0.0
+Pillow==9.3.0
 pycurl==7.43.0.5
 PySocks==1.7.1
 pytesseract==0.3.3
